@@ -38,12 +38,12 @@ let birthYear = 2026 - age; `,
     {
       title: "Kẻ phá bĩnh: 'var' 🦖",
       content: "Var có 3 tật xấu:\n1. Cho phép khai báo trùng tên\n 2. Theo phạm vi function scope\n 3. Hoisting (tự động đưa khai báo lên đầu phạm vi)",
-      code: `// Var cho phép trùng tên biến\nvar view = 10;\nvar view = 5; // view bị ghi đè \n\n// Var có phạm vi lộn xộn\nif (true) {\n  var x = 5;\n}\nconsole.log(x); // Vẫn in ra 5 \n\n// Var bị hoisting\nconsole.log(y); // In ra undefined (không phải lỗi)\nvar y = 10;`
+      code: `// Var cho phép trùng tên biến\nvar score = 10;\nvar score = 5; // score bị ghi đè \n\n// Var có phạm vi lộn xộn\nif (true) {\n  var x = 5;\n}\nconsole.log(x); // Vẫn in ra 5 \n\n// Var bị hoisting\nconsole.log(y); // In ra undefined (không phải lỗi)\nvar y = 10;`
     },
     {
       title: "Người hùng: 'let' 🛡️",
       content: "Để giải quyết vấn đề đó, 'let' ra đời!\n\n - Nếu trùng tên biến: Báo lỗi ngay lập tức => không khởi tạo lần nữa nếu dùng let.\n - Trong phạm vi hàng rào {}(block scope)\n - Không thể truy cập biến trước khi nó được khai báo",
-      code: `// Let không cho phép trùng tên biến\nlet score = 9;\nlet score = 10; // Báo lỗi: Identifier 'score' has already been declared\n\n// Let có phạm vi rõ ràng\nif (true) {\n  let x = 5;\n}\nconsole.log(x); // Báo Lỗi: x is not defined`
+      code: `// Let không cho phép trùng tên biến\nlet score = 10;\nlet score = 5; // Báo lỗi: Identifier 'score' has already been declared\n\n// Let có phạm vi rõ ràng\nif (true) {\n  let x = 5;\n}\nconsole.log(x); // Báo Lỗi: x is not defined`
     },
     {
       title: "Két sắt: 'const' 🔒",

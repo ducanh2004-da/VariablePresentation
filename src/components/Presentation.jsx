@@ -29,8 +29,7 @@ const Presentation = () => {
       code: `let age; // Tạo chiếc hộp trống tên 'age'
 age = 20; // Gán giá trị 20 vào hộp
 
-let birthYear;
-birthYear = 2026 - age; `,
+let birthYear = 2026 - age; `,
     },
     {
       title: "Phần 3: Var, Let, Const - Ba người bạn đồng hành 🧑‍🤝‍🧑",

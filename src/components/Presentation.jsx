@@ -16,7 +16,7 @@ const Presentation = () => {
     },
     {
       title: "Khái niệm nền tảng: Biến (Variable) 📦",
-      content: "Tưởng tượng biến như 1 chiếc hộp có dán nhãn tên là 'view'. Ban đầu hộp chứa số 9. Khi bạn ấn xem video, ta mở hộp lấy số 9 cộng thêm 1 thành 10, rồi lại cất trở lại vào hộp.",
+      content: "Tưởng tượng biến như 1 chiếc hộp có dán nhãn tên là 'view'. Ban đầu hộp chứa số 9. Khi bạn ấn xem video, ta mở hộp lấy số 9 cộng thêm 1 thành 10, rồi lại cất trở lại vào hộp.\n Chiếc hộp biến đó hoạt động y hệt như chính cái giá trị mà nó đang cất giữ",
     },
     {
       title: "Phần 1: Sự đa dạng của Biến (Data Types)",
@@ -24,9 +24,17 @@ const Presentation = () => {
       code: `// Chữ cái (String)\nlet color = "Yellow";\nlet lastName = "Johnson";\n\n// Con số (Number)\nlet length = 16;\nlet weight = 7.5;\n\n// Đúng/Sai (Boolean)\nlet x = true;\nlet y = false;`
     },
     {
-      title: "Phần 2: Khởi tạo chiếc hộp 🛠️",
-      content: "Sử dụng các từ khóa: let, const, var.\n\nCả 3 cái này đều xài được với mọi loại biến. Nhưng có sự khác nhau tùy vào mục đích sử dụng.",
-      note: ""
+      title: "Phần 2: Khởi tạo và gán giá trị cho chiếc hộp 🛠️",
+      content: "Sử dụng các từ khóa: let, const, var để khởi tạo biến. \n\n Để thay đổi giá trị trong 'chiếc hộp' biến, ta dùng toán tử gán là dấu bằng (=).\n💡 Nguyên tắc vàng: Khi đem ra tính toán, biến sẽ hoạt động y hệt như chính cái giá trị mà nó đang cất giữ.",
+      code: `let age; // Tạo chiếc hộp trống tên 'age'
+age = 20; // Gán giá trị 20 vào hộp
+
+let birthYear;
+birthYear = 2026 - age; `,
+    },
+    {
+      title: "Phần 3: Var, Let, Const - Ba người bạn đồng hành 🧑‍🤝‍🧑",
+      content: "Để quản lý tốt hơn những chiếc hộp biến, chúng ta có 3 người bạn đồng hành: 'var', 'let' và 'const'. Mỗi người có cách quản lý và bảo vệ chiếc hộp khác nhau."
     },
     {
       title: "Kẻ phá bĩnh: 'var' 🦖",
@@ -35,7 +43,7 @@ const Presentation = () => {
     },
     {
       title: "Người hùng: 'let' 🛡️",
-      content: "Để giải quyết vấn đề đó, 'let' ra đời!\n\n - Nếu trùng tên biến: Báo lỗi ngay lập tức.\n - Ngoài phạm vi hàng rào {}: Không sử dụng được.\n",
+      content: "Để giải quyết vấn đề đó, 'let' ra đời!\n\n - Nếu trùng tên biến: Báo lỗi ngay lập tức => không khởi tạo lần nữa nếu dùng let.\n - Ngoài phạm vi hàng rào {}: Không sử dụng được.\n",
       code: `// Let không cho phép trùng tên biến\nlet view = 9;\nlet view = 10; // Báo lỗi: Identifier 'view' has already been declared\n\n// Let có phạm vi rõ ràng\nif (true) {\n  let x = 5;\n}\nconsole.log(x); // Báo Lỗi: x is not defined`
     },
     {

@@ -37,8 +37,8 @@ let birthYear = 2026 - age; `,
     },
     {
       title: "Kẻ phá bĩnh: 'var' 🦖",
-      content: "Var có 2 tật xấu:\n1. Cho phép khai báo trùng tên\n 2. Phạm vi lộn xộn",
-      code: `// Var cho phép trùng tên biến\nvar view = 9;\nvar view = 10; // view bị ghi đè \n\n// Var có phạm vi lộn xộn\nif (true) {\n  var x = 5;\n}\nconsole.log(x); // Vẫn in ra 5`
+      content: "Var có 3 tật xấu:\n1. Cho phép khai báo trùng tên\n 2. Phạm vi lộn xộn\n 3. Hoisting (tự động đưa khai báo lên đầu phạm vi)",
+      code: `// Var cho phép trùng tên biến\nvar view = 9;\nvar view = 10; // view bị ghi đè \n\n// Var có phạm vi lộn xộn\nif (true) {\n  var x = 5;\n}\nconsole.log(x); // Vẫn in ra 5 \n\n// Var bị hoisting\nconsole.log(y); // In ra undefined (không phải lỗi)\nvar y = 10;`
     },
     {
       title: "Người hùng: 'let' 🛡️",
